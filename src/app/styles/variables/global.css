@@ -1,0 +1,24 @@
+:root {
+    --family: 'Inter', sans-serif;
+    --fs-sm: 14px;
+    --fs-md: 16px;
+    --fw-light: 300;
+    --fw-normal: 600;
+    --fw-bold: 800;
+
+    --border-radius: .5rem;
+
+    --sidebar-width: 300px;
+    --sidebar-width-collapsed: 80px;
+
+    --modal-z-index: 10;
+
+    --overlay-bg: rgba(0,35,7,.2);
+
+    --btn-padding: 8px;
+
+    --red-light: red;
+    --red-dark: #870000;
+
+    --box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
