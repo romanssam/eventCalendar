@@ -9,7 +9,7 @@ export interface RequireAuthProps {
 export function RequireAuth(props: RequireAuthProps) {
     const { children } = props;
 
-    let isAuth = true;
+    let isAuth = false;
     let location = useLocation();
 
     if (!isAuth) {

@@ -30,7 +30,7 @@ export const routeConfig: Record<AppRoutes, AppRouterProps> = {
     [AppRoutes.LOGIN]: {
         path: RoutePath.login,
         element: <LoginPage />,
-        authOnly: true
+        authOnly: false
     },
     [AppRoutes.NOT_FOUND]: {
         path: RoutePath.not_found,
