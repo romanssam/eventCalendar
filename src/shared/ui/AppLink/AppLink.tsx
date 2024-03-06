@@ -1,4 +1,4 @@
-import {Link, LinkProps} from "react-router-dom";
+import {LinkProps, NavLink} from "react-router-dom";
 import {FC, memo, PropsWithChildren} from "react";
 
 interface AppLinkProps extends LinkProps{
@@ -6,14 +6,14 @@ interface AppLinkProps extends LinkProps{
 }
 
 export const AppLink: FC<PropsWithChildren<AppLinkProps>> =  memo((props) => {
-    const {to, className, children, ...otherProps} = props
-
+    const {to, className, children, ...otherProps} = props;
     return (
-        <Link
+        <NavLink
             to={to}
+            className={({ isActive }) => (isActive ? "link-active" : "")}
             {...otherProps}
         >
             {children}
-        </Link>
+        </NavLink>
     );
 });
